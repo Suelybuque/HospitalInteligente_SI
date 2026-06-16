@@ -1,0 +1,27 @@
+[
+  {
+    "id": "CD001",
+    "prescricaoId": "PRE004",
+    "farmaceuticoId": "U004",
+    "itens": [
+      {
+        "descricao": "Confirmar identidade do paciente via BI",
+        "concluido": true
+      },
+      {
+        "descricao": "Validar credenciais do médico prescritor",
+        "concluido": true
+      },
+      {
+        "descricao": "Verificar lista de alergias activas",
+        "concluido": true
+      },
+      {
+        "descricao": "Sessão de aconselhamento concluída (nova prescrição)",
+        "concluido": true
+      }
+    ],
+    "dispensado": true,
+    "dataHora": "2026-06-15T09:25:53.766Z"
+  }
+]

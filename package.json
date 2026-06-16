@@ -1,32 +1,14 @@
 {
-  "name": "hospitalinteligente-si",
+  "name": "hutomi",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "lucide-react": "^1.17.0",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "setup": "npm --prefix src/frontend install && npm --prefix src/backend install",
+    "dev": "concurrently -n frontend,backend -c cyan,green \"npm --prefix src/frontend run dev\" \"node src/backend/server.js\"",
+    "frontend": "npm --prefix src/frontend run dev",
+    "backend": "node src/backend/server.js"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@rolldown/binding-win32-x64-msvc": "^1.0.3",
-    "@types/node": "^24.12.3",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^10.3.0",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.6.0",
-    "typescript": "~6.0.2",
-    "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "concurrently": "^8.2.2"
   }
 }

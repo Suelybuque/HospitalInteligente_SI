@@ -1,23 +1,75 @@
+/* ── Global reset & font ──────────────────────────────────────────── */
 :root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', 'Inter', system-ui, 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: #213547;
-  background-color: #ffffff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ── Dark theme (default) ── */
+  --bg-page:    #0f1117;
+  --bg-surface: #111827;
+  --bg-raised:  #13151c;
+  --bg-overlay: #1a1d27;
+  --bg-inset:   #0d1117;
+
+  --border:     #1e2840;
+  --border-sub: #1a2235;
+  --scrollbar:  #1e2130;
+
+  --text-1: #f1f5f9;
+  --text-2: #94a3b8;
+  --text-3: #64748b;
+  --text-4: #475569;
+  --text-5: #334155;
+
+  /* Semantic accent surfaces */
+  --accent-surface-blue:   #1e3a5f;
+  --accent-surface-green:  #052e16;
+  --accent-surface-amber:  #1c1206;
+  --accent-text-blue:      #60a5fa;
+  --accent-text-green:     #4ade80;
+  --accent-text-amber:     #fbbf24;
+  --accent-border-blue:    #1d4ed8;
+  --accent-border-green:   #166534;
+}
+
+/* ── Light theme override ─────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-page:    #f0f4f8;
+  --bg-surface: #ffffff;
+  --bg-raised:  #ffffff;
+  --bg-overlay: #f3f4f6;
+  --bg-inset:   #f9fafb;
+
+  --border:     #e2e8f0;
+  --border-sub: #f1f5f9;
+  --scrollbar:  #e5e7eb;
+
+  --text-1: #111827;
+  --text-2: #374151;
+  --text-3: #6b7280;
+  --text-4: #9ca3af;
+  --text-5: #d1d5db;
+
+  --accent-surface-blue:  #eff6ff;
+  --accent-surface-green: #f0fdf4;
+  --accent-surface-amber: #fffbeb;
+  --accent-text-blue:     #2563eb;
+  --accent-text-green:    #15803d;
+  --accent-text-amber:    #b45309;
+  --accent-border-blue:   #bfdbfe;
+  --accent-border-green:  #bbf7d0;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #f8f9fc;
+  background: var(--bg-page);
+  color: var(--text-1);
 }
 
 #root {

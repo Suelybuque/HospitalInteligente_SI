@@ -1,0 +1,68 @@
+[
+  {
+    "id": "PRE001",
+    "pacienteId": "PAC-88291",
+    "medicoId": "U002",
+    "medicamento": "Lisinopril",
+    "dose": "10mg",
+    "horario": "Manhã",
+    "tomado": true,
+    "estado": "activa",
+    "data": "2023-10-22"
+  },
+  {
+    "id": "PRE002",
+    "pacienteId": "PAC-88291",
+    "medicoId": "U002",
+    "medicamento": "Atorvastatina",
+    "dose": "20mg",
+    "horario": "Noite",
+    "tomado": true,
+    "estado": "activa",
+    "data": "2023-10-22"
+  },
+  {
+    "id": "PRE003",
+    "pacienteId": "PAC-88291",
+    "medicoId": "U002",
+    "medicamento": "Multivitamínico",
+    "dose": "1 Cápsula",
+    "horario": "Manhã",
+    "tomado": true,
+    "estado": "activa",
+    "data": "2023-10-22"
+  },
+  {
+    "id": "PRE004",
+    "pacienteId": "PAC-99201",
+    "medicoId": "U002",
+    "medicamento": "Metformina",
+    "dose": "500mg",
+    "horario": "Manhã e Noite",
+    "tomado": false,
+    "estado": "pendente",
+    "data": "2023-10-22"
+  },
+  {
+    "id": "PRE005",
+    "pacienteId": "PAC-10432",
+    "medicoId": "U002",
+    "medicamento": "Amoxicilina",
+    "dose": "250mg",
+    "horario": "8 em 8 horas",
+    "tomado": false,
+    "estado": "pendente",
+    "data": "2023-10-22"
+  },
+  {
+    "id": "PRE006",
+    "pacienteId": "PAC-33812",
+    "medicoId": "U002",
+    "medicamento": "Alprazolam",
+    "dose": "0.5mg",
+    "horario": "Noite",
+    "tomado": false,
+    "estado": "pendente",
+    "data": "2023-10-22"
+  }
+]

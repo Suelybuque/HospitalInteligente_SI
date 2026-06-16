@@ -1,0 +1,57 @@
+[
+  {
+    "id": "PAC-88291",
+    "nome": "Jonathan Doe",
+    "dataNascimento": "1985-05-12",
+    "genero": "Masculino",
+    "prioridade": "ROTINA",
+    "tempoEspera": "—",
+    "estado": "em-consulta",
+    "alergias": [],
+    "historico": []
+  },
+  {
+    "id": "PAC-99201",
+    "nome": "Sofia Jacinto",
+    "dataNascimento": "1990-03-14",
+    "genero": "Feminino",
+    "prioridade": "URGENTE",
+    "tempoEspera": "14 min",
+    "estado": "aguardando",
+    "alergias": ["Penicilina"],
+    "historico": ["Diabetes Tipo 1"]
+  },
+  {
+    "id": "PAC-10432",
+    "nome": "Mário Cossa",
+    "dataNascimento": "1978-11-02",
+    "genero": "Masculino",
+    "prioridade": "EMERGÊNCIA",
+    "tempoEspera": "2 min",
+    "estado": "aguardando",
+    "alergias": ["Sulfa"],
+    "historico": ["Hipertensão"]
+  },
+  {
+    "id": "PAC-20551",
+    "nome": "Ana Nhampule",
+    "dataNascimento": "2001-07-19",
+    "genero": "Feminino",
+    "prioridade": "ROTINA",
+    "tempoEspera": "32 min",
+    "estado": "aguardando",
+    "alergias": [],
+    "historico": []
+  },
+  {
+    "id": "PAC-33812",
+    "nome": "Carlos Sitoe",
+    "dataNascimento": "1965-01-30",
+    "genero": "Masculino",
+    "prioridade": "URGENTE",
+    "tempoEspera": "8 min",
+    "estado": "aguardando",
+    "alergias": ["Ibuprofeno"],
+    "historico": ["Diabetes Tipo 2", "Doença Renal Crónica"]
+  }
+]

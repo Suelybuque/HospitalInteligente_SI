@@ -1,0 +1,35 @@
+[
+  {
+    "id": "U001",
+    "nome": "Jonathan Doe",
+    "email": "paciente@hutomi.co.mz",
+    "senha": "paciente123",
+    "perfil": "patient",
+    "pacienteId": "PAC-88291"
+  },
+  {
+    "id": "U002",
+    "nome": "Dr. Alexandre Vance",
+    "email": "medico@hutomi.co.mz",
+    "senha": "medico123",
+    "perfil": "doctor",
+    "especialidade": "Cardiologia",
+    "sala": "402"
+  },
+  {
+    "id": "U003",
+    "nome": "Dr. Julião Vane",
+    "email": "gestor@hutomi.co.mz",
+    "senha": "gestor123",
+    "perfil": "manager",
+    "cargo": "Director Médico"
+  },
+  {
+    "id": "U004",
+    "nome": "Dra. Sara Jenkins",
+    "email": "farmacia@hutomi.co.mz",
+    "senha": "farmacia123",
+    "perfil": "pharmacist",
+    "cargo": "Farmacêutica Chefe"
+  }
+]

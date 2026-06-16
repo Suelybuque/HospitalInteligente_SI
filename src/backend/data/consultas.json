@@ -1,0 +1,35 @@
+[
+  {
+    "id": "CON001",
+    "pacienteId": "PAC-88291",
+    "medicoId": "U002",
+    "medicoNome": "Dra. Sara Jenkins",
+    "especialidade": "Cardiologia",
+    "data": "2023-10-24",
+    "hora": "10:30",
+    "local": "Edifício B, 4º andar, Sala 402",
+    "estado": "agendada"
+  },
+  {
+    "id": "CON002",
+    "pacienteId": "PAC-99201",
+    "medicoId": "U002",
+    "medicoNome": "Dr. Alexandre Vance",
+    "especialidade": "Cardiologia",
+    "data": "2023-10-22",
+    "hora": "09:00",
+    "local": "Sala 402",
+    "estado": "concluída"
+  },
+  {
+    "id": "CON003",
+    "pacienteId": "PAC-10432",
+    "medicoId": "U002",
+    "medicoNome": "Dr. Alexandre Vance",
+    "especialidade": "Medicina Geral",
+    "data": "2023-10-22",
+    "hora": "11:00",
+    "local": "Urgências",
+    "estado": "em-curso"
+  }
+]

@@ -10,41 +10,23 @@
   flex-direction: column;
   height: 100vh;
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  background: #0f1117;
-  color: #e2e8f0;
+  background: var(--bg-page);
+  color: var(--text-1);
   overflow: hidden;
 }
 
-.clin-dashboard * {
-  box-sizing: border-box;
-}
+.clin-dashboard * { box-sizing: border-box; }
 
-.clin-dashboard ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-
-.clin-dashboard ::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.clin-dashboard ::-webkit-scrollbar-thumb {
-  background: #1e2130;
-  border-radius: 4px;
-}
-
-.clin-dashboard button:hover {
-  opacity: 0.85;
-}
-
-.clin-dashboard textarea:focus {
-  outline: 1px solid #3b82f6;
-}
+.clin-dashboard ::-webkit-scrollbar { width: 4px; height: 4px; }
+.clin-dashboard ::-webkit-scrollbar-track { background: transparent; }
+.clin-dashboard ::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
+.clin-dashboard button:hover { opacity: 0.85; }
+.clin-dashboard textarea:focus { outline: 1px solid #3b82f6; }
 
 /* ── Top bar ── */
 .clin-header {
-  background: #13151c;
-  border-bottom: 1px solid #1e2130;
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border);
   padding: 0 20px;
   height: 52px;
   display: flex;
@@ -53,12 +35,7 @@
   flex-shrink: 0;
 }
 
-.clin-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-right: 8px;
-}
+.clin-logo { display: flex; align-items: center; gap: 8px; margin-right: 8px; }
 
 .clin-logo-icon {
   width: 28px;
@@ -73,26 +50,24 @@
 .clin-logo-text {
   font-weight: 700;
   font-size: 15px;
-  color: #f1f5f9;
+  color: var(--text-1);
   letter-spacing: -0.02em;
 }
 
 .clin-search {
   flex: 1;
   max-width: 340px;
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 6px 12px;
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #64748b;
+  color: var(--text-3);
 }
 
-.clin-search-placeholder {
-  font-size: 13px;
-}
+.clin-search-placeholder { font-size: 13px; }
 
 .clin-header-actions {
   margin-left: auto;
@@ -116,35 +91,26 @@
   animation: clin-pulse 2s infinite;
 }
 
-.clin-alert-icon {
-  color: #ef4444;
-}
+.clin-alert-icon { color: #ef4444; }
 
-.clin-user-block {
+.clin-theme-btn {
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-3);
 }
 
-.clin-user-info {
-  text-align: right;
-}
-
-.clin-user-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f1f5f9;
-}
-
-.clin-user-role {
-  font-size: 10px;
-  color: #64748b;
-  letter-spacing: 0.04em;
-}
-
-.clin-avatar-wrap {
-  position: relative;
-}
+.clin-user-block { display: flex; align-items: center; gap: 10px; }
+.clin-user-info { text-align: right; }
+.clin-user-name { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.clin-user-role { font-size: 10px; color: var(--text-3); letter-spacing: 0.04em; }
+.clin-avatar-wrap { position: relative; }
 
 .clin-avatar {
   width: 34px;
@@ -167,12 +133,12 @@
   height: 9px;
   border-radius: 50%;
   background: #22c55e;
-  border: 2px solid #13151c;
+  border: 2px solid var(--bg-raised);
 }
 
 .clin-bell-btn {
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   border-radius: 8px;
   width: 32px;
   height: 32px;
@@ -180,22 +146,18 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #64748b;
+  color: var(--text-3);
 }
 
 /* ── Body layout ── */
-.clin-body {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
-}
+.clin-body { display: flex; flex: 1; overflow: hidden; }
 
 /* ── Left: Patient Queue ── */
 .clin-queue {
   width: 240px;
   flex-shrink: 0;
-  background: #13151c;
-  border-right: 1px solid #1e2130;
+  background: var(--bg-raised);
+  border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -206,7 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #1e2130;
+  border-bottom: 1px solid var(--border);
 }
 
 .clin-queue-title {
@@ -215,23 +177,19 @@
   gap: 7px;
   font-weight: 700;
   font-size: 13px;
-  color: #f1f5f9;
+  color: var(--text-1);
 }
 
 .clin-queue-count {
-  background: #1e3a5f;
-  color: #60a5fa;
+  background: var(--accent-surface-blue);
+  color: var(--accent-text-blue);
   font-size: 11px;
   font-weight: 700;
   padding: 2px 8px;
   border-radius: 12px;
 }
 
-.clin-queue-list {
-  flex: 1;
-  overflow-y: auto;
-  padding: 8px;
-}
+.clin-queue-list { flex: 1; overflow-y: auto; padding: 8px; }
 
 .clin-patient-btn {
   width: 100%;
@@ -244,10 +202,11 @@
   cursor: pointer;
   margin-bottom: 3px;
   transition: all 0.15s;
+  color: var(--text-1);
 }
 
 .clin-patient-btn.active {
-  background: #1e2130;
+  background: var(--bg-overlay);
   border: 1px solid #3b82f620;
   border-left: 3px solid #3b82f6;
 }
@@ -259,30 +218,10 @@
   margin-bottom: 4px;
 }
 
-.clin-patient-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f1f5f9;
-}
-
-.clin-patient-btn-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.clin-patient-meta {
-  font-size: 11px;
-  color: #475569;
-}
-
-.clin-patient-wait {
-  font-size: 11px;
-  color: #475569;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
+.clin-patient-name { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.clin-patient-btn-bottom { display: flex; align-items: center; justify-content: space-between; }
+.clin-patient-meta { font-size: 11px; color: var(--text-4); }
+.clin-patient-wait { font-size: 11px; color: var(--text-4); display: flex; align-items: center; gap: 3px; }
 
 /* ── Priority badges ── */
 .clin-priority-badge {
@@ -292,36 +231,13 @@
   border-radius: 4px;
   letter-spacing: 0.05em;
 }
-
-.clin-priority-badge.urgent {
-  background: #fff7ed;
-  color: #ea580c;
-}
-
-.clin-priority-badge.emergency {
-  background: #fef2f2;
-  color: #dc2626;
-}
-
-.clin-priority-badge.routine {
-  background: #f0fdf4;
-  color: #16a34a;
-}
+.clin-priority-badge.urgent  { background: #fff7ed; color: #ea580c; }
+.clin-priority-badge.emergency { background: #fef2f2; color: #dc2626; }
+.clin-priority-badge.routine  { background: #f0fdf4; color: #16a34a; }
 
 /* ── Incoming emergency ── */
-.clin-emergency-section {
-  padding: 8px;
-  border-top: 1px solid #1e2130;
-}
-
-.clin-emergency-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: #ef4444;
-  letter-spacing: 0.08em;
-  margin-bottom: 6px;
-  padding: 0 4px;
-}
+.clin-emergency-section { padding: 8px; border-top: 1px solid var(--border); }
+.clin-emergency-label { font-size: 10px; font-weight: 700; color: #ef4444; letter-spacing: 0.08em; margin-bottom: 6px; padding: 0 4px; }
 
 .clin-emergency-card {
   background: #1c0a0a;
@@ -334,39 +250,19 @@
   gap: 8px;
 }
 
-.clin-emergency-icon {
-  color: #ef4444;
-  font-size: 14px;
-}
-
-.clin-emergency-info {
-  flex: 1;
-}
-
-.clin-emergency-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: #fca5a5;
-}
-
-.clin-emergency-sub {
-  font-size: 11px;
-  color: #991b1b;
-}
-
-.clin-emergency-time {
-  font-size: 11px;
-  color: #ef4444;
-  font-weight: 700;
-}
+.clin-emergency-icon { color: #ef4444; font-size: 14px; }
+.clin-emergency-info { flex: 1; }
+.clin-emergency-title { font-size: 12px; font-weight: 700; color: #fca5a5; }
+.clin-emergency-sub   { font-size: 11px; color: #991b1b; }
+.clin-emergency-time  { font-size: 11px; color: #ef4444; font-weight: 700; }
 
 .clin-walkin-btn {
   margin: 8px;
   padding: 9px;
-  background: #1a1d27;
-  border: 1px dashed #272a38;
+  background: var(--bg-overlay);
+  border: 1px dashed var(--border);
   border-radius: 8px;
-  color: #475569;
+  color: var(--text-4);
   font-size: 13px;
   cursor: pointer;
   display: flex;
@@ -386,9 +282,9 @@
 }
 
 .clin-card {
-  background: #13151c;
+  background: var(--bg-raised);
   border-radius: 12px;
-  border: 1px solid #1e2130;
+  border: 1px solid var(--border);
   padding: 16px 20px;
 }
 
@@ -399,55 +295,35 @@
   margin-bottom: 10px;
 }
 
-.clin-patient-header-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
+.clin-patient-header-left { display: flex; align-items: center; gap: 14px; }
 
 .clin-patient-avatar-lg {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #1e3a5f, #1e3050);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #60a5fa;
+  color: #fff;
   font-weight: 700;
   font-size: 17px;
   flex-shrink: 0;
 }
 
-.clin-patient-title {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 700;
-  color: #f1f5f9;
-  letter-spacing: -0.02em;
-}
-
-.clin-patient-demographics {
-  font-size: 13px;
-  color: #64748b;
-  margin-top: 2px;
-}
-
-.clin-patient-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+.clin-patient-title { margin: 0; font-size: 22px; font-weight: 700; color: var(--text-1); letter-spacing: -0.02em; }
+.clin-patient-demographics { font-size: 13px; color: var(--text-3); margin-top: 2px; }
+.clin-patient-actions { display: flex; gap: 8px; align-items: center; }
 
 .clin-btn-secondary {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 7px 14px;
-  color: #94a3b8;
+  color: var(--text-2);
   font-size: 13px;
   cursor: pointer;
 }
@@ -466,16 +342,7 @@
   cursor: pointer;
 }
 
-.clin-last-seen {
-  font-size: 11px;
-  color: #475569;
-  margin-bottom: 10px;
-}
-
-.clin-tags {
-  display: flex;
-  gap: 8px;
-}
+.clin-tags { display: flex; gap: 8px; }
 
 .clin-tag {
   background: #1c1a2e;
@@ -495,47 +362,21 @@
 }
 
 .clin-vital-card {
-  background: #13151c;
-  border: 1px solid #1e2130;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px 16px;
 }
 
-.clin-vital-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: #475569;
-  letter-spacing: 0.06em;
-  margin-bottom: 8px;
-}
-
-.clin-vital-row {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
-}
-
-.clin-vital-value {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.clin-vital-value.bp { color: #3b82f6; }
-.clin-vital-value.hr { color: #10b981; }
+.clin-vital-label { font-size: 10px; font-weight: 700; color: var(--text-4); letter-spacing: 0.06em; margin-bottom: 8px; }
+.clin-vital-row { display: flex; align-items: baseline; gap: 4px; }
+.clin-vital-value { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.clin-vital-value.bp   { color: #3b82f6; }
+.clin-vital-value.hr   { color: #10b981; }
 .clin-vital-value.temp { color: #f59e0b; }
 .clin-vital-value.spo2 { color: #06b6d4; }
-
-.clin-vital-unit {
-  font-size: 12px;
-  color: #64748b;
-}
-
-.clin-vital-sub {
-  font-size: 11px;
-  color: #475569;
-  margin-top: 4px;
-}
+.clin-vital-unit { font-size: 12px; color: var(--text-3); }
+.clin-vital-sub  { font-size: 11px; color: var(--text-4); margin-top: 4px; }
 
 /* ── Notes + Orders grid ── */
 .clin-two-col {
@@ -545,8 +386,8 @@
 }
 
 .clin-panel {
-  background: #13151c;
-  border: 1px solid #1e2130;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px;
   display: flex;
@@ -554,36 +395,16 @@
   gap: 12px;
 }
 
-.clin-panel-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.clin-panel-title {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #f1f5f9;
-}
-
-.clin-link-btn {
-  background: none;
-  border: none;
-  color: #3b82f6;
-  font-size: 13px;
-  cursor: pointer;
-  font-weight: 500;
-}
+.clin-panel-header { display: flex; align-items: center; justify-content: space-between; }
+.clin-panel-title { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 14px; color: var(--text-1); }
+.clin-link-btn { background: none; border: none; color: #3b82f6; font-size: 13px; cursor: pointer; font-weight: 500; }
 
 .clin-notes-textarea {
-  background: #0f1117;
-  border: 1px solid #1e2130;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px 14px;
-  color: #cbd5e1;
+  color: var(--text-2);
   font-size: 13px;
   line-height: 1.6;
   resize: none;
@@ -591,28 +412,16 @@
   font-family: inherit;
 }
 
-.clin-notes-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.clin-autosave {
-  font-size: 11px;
-  color: #475569;
-}
-
-.clin-notes-actions {
-  display: flex;
-  gap: 8px;
-}
+.clin-notes-footer { display: flex; align-items: center; justify-content: space-between; }
+.clin-autosave { font-size: 11px; color: var(--text-4); }
+.clin-notes-actions { display: flex; gap: 8px; }
 
 .clin-btn-ghost {
   background: none;
-  border: 1px solid #272a38;
+  border: 1px solid var(--border);
   border-radius: 7px;
   padding: 6px 14px;
-  color: #64748b;
+  color: var(--text-3);
   font-size: 13px;
   cursor: pointer;
 }
@@ -632,25 +441,21 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  background: #1a2e1a;
-  border: 1px solid #166534;
+  background: var(--accent-surface-green);
+  border: 1px solid var(--accent-border-green);
   border-radius: 7px;
   padding: 5px 10px;
-  color: #4ade80;
+  color: var(--accent-text-green);
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.clin-orders-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+.clin-orders-list { display: flex; flex-direction: column; gap: 8px; }
 
 .clin-order-item {
-  background: #0f1117;
-  border: 1px solid #1e2130;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 14px;
   display: flex;
@@ -658,56 +463,17 @@
   justify-content: space-between;
 }
 
-.clin-order-drug {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f1f5f9;
-  margin-bottom: 2px;
-}
+.clin-order-drug { font-size: 13px; font-weight: 600; color: var(--text-1); margin-bottom: 2px; }
+.clin-order-detail { font-size: 12px; color: var(--text-4); }
+.clin-order-tag { font-weight: 600; }
 
-.clin-order-detail {
-  font-size: 12px;
-  color: #475569;
-}
-
-.clin-order-tag {
-  font-weight: 600;
-}
-
-.clin-order-status {
-  font-size: 11px;
-  font-weight: 600;
-  border-radius: 6px;
-  padding: 2px 8px;
-}
-
-.clin-order-status.active {
-  color: #22c55e;
-  background: #052e16;
-  border: 1px solid #166534;
-}
-
-.clin-order-status.recent {
-  color: #f59e0b;
-  background: #1c1206;
-  border: 1px solid #854d0e;
-}
+.clin-order-status { font-size: 11px; font-weight: 600; border-radius: 6px; padding: 2px 8px; }
+.clin-order-status.active { color: #22c55e; background: #052e16; border: 1px solid #166534; }
+.clin-order-status.recent { color: #f59e0b; background: #1c1206; border: 1px solid #854d0e; }
 
 /* ── Triage ── */
-.clin-triage-section {
-  border-top: 1px solid #1e2130;
-  padding-top: 12px;
-}
-
-.clin-triage-title {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-weight: 600;
-  font-size: 13px;
-  color: #f1f5f9;
-  margin-bottom: 8px;
-}
+.clin-triage-section { border-top: 1px solid var(--border); padding-top: 12px; }
+.clin-triage-title { display: flex; align-items: center; gap: 7px; font-weight: 600; font-size: 13px; color: var(--text-1); margin-bottom: 8px; }
 
 .clin-triage-box {
   background: #1c1206;
@@ -716,104 +482,45 @@
   padding: 10px 14px;
 }
 
-.clin-triage-text {
-  margin: 0 0 6px;
-  font-size: 12px;
-  color: #fbbf24;
-  line-height: 1.5;
-}
-
-.clin-triage-text:last-child {
-  margin-bottom: 0;
-}
-
-.clin-risk-link {
-  background: none;
-  border: none;
-  color: #3b82f6;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 8px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+.clin-triage-text { margin: 0 0 6px; font-size: 12px; color: #fbbf24; line-height: 1.5; }
+.clin-triage-text:last-child { margin-bottom: 0; }
 
 /* ── Longitudinal History ── */
-.clin-history-card {
-  padding: 18px;
-}
+.clin-history-card { padding: 18px; }
+.clin-history-title { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 14px; color: var(--text-1); margin-bottom: 14px; }
 
-.clin-history-title {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #f1f5f9;
-  margin-bottom: 14px;
-}
-
-.clin-timeline {
-  position: relative;
-  padding-left: 24px;
-}
+.clin-timeline { position: relative; padding-left: 24px; }
 
 .clin-timeline-line {
   position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
+  left: 7px; top: 8px; bottom: 8px;
   width: 2px;
-  background: #1e2130;
+  background: var(--border);
   border-radius: 2px;
 }
 
-.clin-timeline-item {
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.clin-timeline-item:last-child {
-  margin-bottom: 0;
-}
+.clin-timeline-item { position: relative; margin-bottom: 16px; }
+.clin-timeline-item:last-child { margin-bottom: 0; }
 
 .clin-timeline-dot {
   position: absolute;
-  left: -20px;
-  top: 4px;
-  width: 10px;
-  height: 10px;
+  left: -20px; top: 4px;
+  width: 10px; height: 10px;
   border-radius: 50%;
-  background: #0f1117;
+  background: var(--bg-page);
   border: 2px solid #3b82f6;
 }
 
-.clin-timeline-type {
-  font-size: 13px;
-  font-weight: 600;
-  color: #60a5fa;
-  margin-bottom: 1px;
-}
+.clin-timeline-type { font-size: 13px; font-weight: 600; color: #60a5fa; margin-bottom: 1px; }
+.clin-timeline-date { color: var(--text-4); font-weight: 400; }
+.clin-timeline-note { font-size: 12px; color: var(--text-2); line-height: 1.5; }
 
-.clin-timeline-date {
-  color: #475569;
-  font-weight: 400;
-}
-
-.clin-timeline-note {
-  font-size: 12px;
-  color: #94a3b8;
-  line-height: 1.5;
-}
-
-/* ── Right sidebar: Lab + Diagnostics ── */
+/* ── Right sidebar ── */
 .clin-sidebar {
   width: 260px;
   flex-shrink: 0;
-  background: #13151c;
-  border-left: 1px solid #1e2130;
+  background: var(--bg-raised);
+  border-left: 1px solid var(--border);
   overflow-y: auto;
   padding: 14px;
   display: flex;
@@ -821,93 +528,37 @@
   gap: 16px;
 }
 
-.clin-sidebar-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
+.clin-sidebar-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.clin-sidebar-title { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 13px; color: var(--text-1); }
+.clin-expand-btn { background: none; border: none; color: var(--text-3); cursor: pointer; font-size: 16px; }
 
-.clin-sidebar-title {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-weight: 700;
-  font-size: 13px;
-  color: #f1f5f9;
-}
-
-.clin-expand-btn {
-  background: none;
-  border: none;
-  color: #64748b;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.clin-lab-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+.clin-lab-list { display: flex; flex-direction: column; gap: 10px; }
 
 .clin-lab-card {
-  background: #0f1117;
-  border: 1px solid #1e2130;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 14px;
 }
 
-.clin-lab-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 2px;
-}
-
-.clin-lab-name {
-  font-size: 12px;
-  font-weight: 600;
-  color: #cbd5e1;
-  max-width: 130px;
-}
-
-.clin-lab-value {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
+.clin-lab-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2px; }
+.clin-lab-name { font-size: 12px; font-weight: 600; color: var(--text-2); max-width: 130px; }
+.clin-lab-value { font-size: 14px; font-weight: 700; letter-spacing: -0.02em; }
 .clin-lab-value.normal { color: #22c55e; }
 .clin-lab-value.elevated { color: #f87171; }
-
-.clin-lab-unit {
-  font-size: 10px;
-  font-weight: 400;
-}
-
-.clin-lab-status {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  margin-bottom: 6px;
-}
-
+.clin-lab-unit { font-size: 10px; font-weight: 400; }
+.clin-lab-status { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; margin-bottom: 6px; }
 .clin-lab-status.normal { color: #16a34a; }
 .clin-lab-status.elevated { color: #dc2626; }
-
-.clin-sparkline {
-  display: block;
-}
 
 .clin-view-all-btn {
   width: 100%;
   margin-top: 10px;
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 8px 0;
-  color: #64748b;
+  color: var(--text-3);
   font-size: 12px;
   cursor: pointer;
   display: flex;
@@ -916,22 +567,16 @@
   gap: 6px;
 }
 
-.clin-diagnostics-title {
-  margin-bottom: 12px;
-}
+.clin-diagnostics-title { margin-bottom: 12px; }
 
-.clin-diagnostics-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
+.clin-diagnostics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
 .clin-diagnostic-btn {
-  background: #0f1117;
-  border: 1px solid #1e2130;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px 8px;
-  color: #94a3b8;
+  color: var(--text-2);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -946,20 +591,20 @@
 .clin-send-lab-btn {
   width: 100%;
   margin-top: 10px;
-  background: #1e3a5f;
-  border: 1px solid #1d4ed8;
+  background: var(--accent-surface-blue);
+  border: 1px solid var(--accent-border-blue);
   border-radius: 8px;
   padding: 8px 0;
-  color: #60a5fa;
+  color: var(--accent-text-blue);
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
 }
 
-/* ── Specialist Referral ── */
+/* ── Referral ── */
 .clin-referral-card {
-  background: #0f1117;
-  border: 1px dashed #272a38;
+  background: var(--bg-inset);
+  border: 1px dashed var(--border);
   border-radius: 12px;
   padding: 18px;
   text-align: center;
@@ -969,36 +614,25 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 10px;
-  color: #64748b;
+  color: var(--text-3);
 }
 
-.clin-referral-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: #f1f5f9;
-  margin-bottom: 6px;
-}
-
-.clin-referral-desc {
-  font-size: 12px;
-  color: #64748b;
-  line-height: 1.5;
-  margin-bottom: 12px;
-}
+.clin-referral-title { font-weight: 700; font-size: 14px; color: var(--text-1); margin-bottom: 6px; }
+.clin-referral-desc  { font-size: 12px; color: var(--text-3); line-height: 1.5; margin-bottom: 12px; }
 
 .clin-referral-btn {
   width: 100%;
   padding: 8px 0;
-  background: #1a1d27;
-  border: 1px solid #272a38;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  color: #94a3b8;
+  color: var(--text-2);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -1007,10 +641,8 @@
 /* ── Floating alert ── */
 .clin-fab {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 44px;
-  height: 44px;
+  bottom: 20px; right: 20px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   background: linear-gradient(135deg, #ef4444, #dc2626);
   border: none;

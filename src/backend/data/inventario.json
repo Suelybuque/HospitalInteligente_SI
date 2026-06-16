@@ -1,0 +1,112 @@
+[
+  {
+    "id": "INV001",
+    "nome": "Atorvastatina 20mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-4491-01",
+    "alertaLote": false,
+    "categoria": "Cardiologia",
+    "quantidade": 1240,
+    "estado": "Estável"
+  },
+  {
+    "id": "INV002",
+    "nome": "Metformina 500mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-9902-12",
+    "alertaLote": true,
+    "categoria": "Endocrinologia",
+    "quantidade": 24,
+    "estado": "Stock Baixo"
+  },
+  {
+    "id": "INV003",
+    "nome": "Amoxicilina 250mg",
+    "sub": "Cápsulas",
+    "loteId": "LOT-1102-09",
+    "alertaLote": false,
+    "categoria": "Antibióticos",
+    "quantidade": 415,
+    "estado": "Verificado"
+  },
+  {
+    "id": "INV004",
+    "nome": "Lisinopril 10mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-3382-05",
+    "alertaLote": false,
+    "categoria": "Cardiologia",
+    "quantidade": 88,
+    "estado": "Pendente"
+  },
+  {
+    "id": "INV005",
+    "nome": "Alprazolam 0.5mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-0021-99",
+    "alertaLote": true,
+    "categoria": "Psiquiatria",
+    "quantidade": 12,
+    "estado": "Stock Baixo"
+  },
+  {
+    "id": "INV006",
+    "nome": "Paracetamol 500mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-5510-03",
+    "alertaLote": false,
+    "categoria": "Analgésicos",
+    "quantidade": 2500,
+    "estado": "Estável"
+  },
+  {
+    "id": "INV007",
+    "nome": "Ibuprofeno 400mg",
+    "sub": "Comprimidos",
+    "loteId": "LOT-7723-11",
+    "alertaLote": false,
+    "categoria": "Analgésicos",
+    "quantidade": 870,
+    "estado": "Estável"
+  },
+  {
+    "id": "INV-1781515546889",
+    "alertaLote": false,
+    "estado": "Pendente",
+    "nome": "Novo Medicamento",
+    "sub": "Categoria TBD",
+    "loteId": "LOT-7729-00",
+    "categoria": "Geral",
+    "quantidade": 100
+  },
+  {
+    "id": "INV-1781515547670",
+    "alertaLote": false,
+    "estado": "Pendente",
+    "nome": "Novo Medicamento",
+    "sub": "Categoria TBD",
+    "loteId": "LOT-5767-00",
+    "categoria": "Geral",
+    "quantidade": 100
+  },
+  {
+    "id": "INV-1781515548108",
+    "alertaLote": false,
+    "estado": "Pendente",
+    "nome": "Novo Medicamento",
+    "sub": "Categoria TBD",
+    "loteId": "LOT-5689-00",
+    "categoria": "Geral",
+    "quantidade": 100
+  },
+  {
+    "id": "INV-1781515548621",
+    "alertaLote": false,
+    "estado": "Pendente",
+    "nome": "Novo Medicamento",
+    "sub": "Categoria TBD",
+    "loteId": "LOT-5115-00",
+    "categoria": "Geral",
+    "quantidade": 100
+  }
+]

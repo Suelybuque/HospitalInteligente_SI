@@ -1,0 +1,30 @@
+[
+  {
+    "id": "HC001",
+    "pacienteId": "PAC-99201",
+    "tipo": "Consulta de Rotina",
+    "data": "2024-01-15",
+    "nota": "Acompanhamento de rotina. Diabetes controlada, valores estáveis."
+  },
+  {
+    "id": "HC002",
+    "pacienteId": "PAC-99201",
+    "tipo": "Visita de Urgência",
+    "data": "2023-10-02",
+    "nota": "Episódio hipoglicémico. Recuperada após administração de glicose IV."
+  },
+  {
+    "id": "HC003",
+    "pacienteId": "PAC-99201",
+    "tipo": "Exame Anual",
+    "data": "2023-08-22",
+    "nota": "Exame anual de saúde. Sem alterações significativas."
+  },
+  {
+    "id": "HC004",
+    "pacienteId": "PAC-88291",
+    "tipo": "Consulta de Rotina",
+    "data": "2023-09-10",
+    "nota": "Controlo de tensão arterial. Medicação ajustada."
+  }
+]

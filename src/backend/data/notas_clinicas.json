@@ -1,0 +1,30 @@
+[
+  {
+    "id": "NC001",
+    "pacienteId": "PAC-99201",
+    "medicoId": "U002",
+    "texto": "Paciente queixa-se de dor torácica com irradiação para o braço esquerdo. ECG realizado sem alterações agudas. Aguarda troponinas.",
+    "dataHora": "2024-02-15T10:30:00"
+  },
+  {
+    "id": "NC002",
+    "pacienteId": "PAC-88291",
+    "medicoId": "U002",
+    "texto": "Consulta de rotina. Tensão arterial controlada. Glicemia levemente acima do normal. Recomendado controlo alimentar e exercício físico regular.",
+    "dataHora": "2024-01-15T09:00:00"
+  },
+  {
+    "id": "NC-1781515523850",
+    "dataHora": "2026-06-15T09:25:23.850Z",
+    "pacienteId": "PAC-20551",
+    "medicoId": "U002",
+    "texto": "jhgjhvjvhv\n"
+  },
+  {
+    "id": "NC-1781516762021",
+    "dataHora": "2026-06-15T09:46:02.021Z",
+    "pacienteId": "PAC-99201",
+    "medicoId": "U002",
+    "texto": "Paciente queixa-se de dor torácica com irradiação para o braço esquerdo. ECG realizado sem alterações agudas. Aguarda troponinas."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "KPI001",
+    "data": "2023-10-22",
+    "chegadasPacientes": 412,
+    "ocupacaoCamas": 88.2,
+    "camasDisponiveis": 42,
+    "alertasStock": 4,
+    "receitaDiaria": 124000
+  }
+]

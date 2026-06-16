@@ -1,0 +1,19 @@
+[
+  {
+    "id": "FAC001",
+    "pacienteId": "PAC-88291",
+    "itens": [
+      {
+        "descricao": "Consulta Geral",
+        "valor": 850
+      },
+      {
+        "descricao": "Exames Laboratoriais",
+        "valor": 395
+      }
+    ],
+    "total": 1245,
+    "estado": "paga",
+    "dataLimite": "2023-10-30"
+  }
+]

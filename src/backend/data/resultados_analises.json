@@ -1,0 +1,74 @@
+[
+  {
+    "id": "AN001",
+    "pacienteId": "PAC-88291",
+    "nomeExame": "Hemograma Completo",
+    "data": "2023-10-15",
+    "prestador": "Lab Central HCM",
+    "estado": "Normal",
+    "valor": "Normal",
+    "unidade": "",
+    "estadoLab": "NORMAL",
+    "relatorio": "Todos os valores dentro do intervalo de referência."
+  },
+  {
+    "id": "AN002",
+    "pacienteId": "PAC-88291",
+    "nomeExame": "Glicemia em Jejum",
+    "data": "2023-10-15",
+    "prestador": "Lab Central HCM",
+    "estado": "Alto",
+    "valor": "118",
+    "unidade": "mg/dL",
+    "estadoLab": "ELEVADO",
+    "relatorio": "Glicemia levemente elevada. Recomenda-se controlo alimentar."
+  },
+  {
+    "id": "AN003",
+    "pacienteId": "PAC-88291",
+    "nomeExame": "Perfil Lipídico",
+    "data": "2023-10-10",
+    "prestador": "Lab Central HCM",
+    "estado": "Normal",
+    "valor": "5.8",
+    "unidade": "mmol/L",
+    "estadoLab": "ELEVADO",
+    "relatorio": "Colesterol total ligeiramente elevado."
+  },
+  {
+    "id": "AN004",
+    "pacienteId": "PAC-88291",
+    "nomeExame": "Ureia e Creatinina",
+    "data": "2023-10-08",
+    "prestador": "Lab Central HCM",
+    "estado": "Normal",
+    "valor": "Normal",
+    "unidade": "",
+    "estadoLab": "NORMAL",
+    "relatorio": "Função renal dentro dos parâmetros normais."
+  },
+  {
+    "id": "AN005",
+    "pacienteId": "PAC-88291",
+    "nomeExame": "Radiografia Torácica",
+    "data": "2023-10-05",
+    "prestador": "Imagiologia HCM",
+    "estado": "Pendente",
+    "valor": "—",
+    "unidade": "",
+    "estadoLab": "NORMAL",
+    "relatorio": "Aguarda leitura pelo radiologista."
+  },
+  {
+    "id": "AN006",
+    "pacienteId": "PAC-99201",
+    "nomeExame": "Hemograma Completo",
+    "data": "2023-10-22",
+    "prestador": "Lab Central HCM",
+    "estado": "Alto",
+    "valor": "Elevado",
+    "unidade": "",
+    "estadoLab": "ELEVADO",
+    "relatorio": "Leucócitos elevados. Possível processo infeccioso."
+  }
+]

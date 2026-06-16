@@ -1,0 +1,42 @@
+[
+  {
+    "id": "LOG001",
+    "timestamp": "2023-10-22T08:14:22",
+    "evento": "Acesso a Registo Clínico",
+    "actor": "Dr. Alexandre Vance",
+    "local": "Terminal Clínico 04",
+    "estado": "INFO"
+  },
+  {
+    "id": "LOG002",
+    "timestamp": "2023-10-22T09:02:11",
+    "evento": "Tentativa de Login Falhada",
+    "actor": "Utilizador Desconhecido",
+    "local": "Recepção Principal",
+    "estado": "AVISO"
+  },
+  {
+    "id": "LOG003",
+    "timestamp": "2023-10-22T10:45:00",
+    "evento": "Stock Crítico Detectado",
+    "actor": "Sistema Automático",
+    "local": "Farmácia Central",
+    "estado": "CRÍTICO"
+  },
+  {
+    "id": "LOG004",
+    "timestamp": "2023-10-22T11:30:55",
+    "evento": "Nova Prescrição Criada",
+    "actor": "Dr. Alexandre Vance",
+    "local": "Sala 402",
+    "estado": "INFO"
+  },
+  {
+    "id": "LOG005",
+    "timestamp": "2023-10-22T13:15:33",
+    "evento": "Medicamento Dispensado",
+    "actor": "Dra. Sara Jenkins",
+    "local": "Farmácia Central",
+    "estado": "INFO"
+  }
+]

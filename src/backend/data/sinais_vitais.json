@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SV001",
+    "pacienteId": "PAC-88291",
+    "frequenciaCardiaca": 72,
+    "glicemia": 98,
+    "tensaoSistolica": 120,
+    "tensaoDiastolica": 80,
+    "temperatura": 36.8,
+    "spo2": 98,
+    "peso": 82,
+    "data": "2023-10-22"
+  },
+  {
+    "id": "SV002",
+    "pacienteId": "PAC-99201",
+    "frequenciaCardiaca": 110,
+    "glicemia": 145,
+    "tensaoSistolica": 150,
+    "tensaoDiastolica": 95,
+    "temperatura": 37.4,
+    "spo2": 94,
+    "peso": 68,
+    "data": "2023-10-22"
+  }
+]
